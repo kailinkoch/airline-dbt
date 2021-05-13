@@ -1,15 +1,5 @@
-Welcome to your new dbt project!
 
-### Using the starter project
+## Airline DBT Project
 
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](http://slack.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+Dataset: https://postgrespro.com/docs/postgrespro/10/demodb-bookings
+Specifically, I used the demo-medium-en.zip file
