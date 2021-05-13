@@ -1,0 +1,41 @@
+version: 2
+
+sources:
+    - name: proj5
+      database: demo
+      schema: bookings
+      quoting:
+          database: true
+          schema: true
+          identifier: true
+      tables:
+        - name: aircrafts
+        - name: airports
+        - name: aircrafts_data
+        - name: airports_data
+        - name: boarding_passes
+        - name: bookings
+        - name: routes
+        - name: flights
+        - name: seats
+        - name: ticket_flights
+        - name: tickets
+models:
+  - name: step1
+    description: This view contains the distance between airports, timezone changes and trip duration.
+  - name: step2
+    description: This view aggregates ticket and flight data at the route level.
+  - name: step3
+    description: This view includes total available seats per route (aircrafts * number of flights)
+  - name: step4
+    description: This view includes the occupancy rate for each route.
+  - name: step5
+    description: This view includes the busiest average departure airports and flights per route
+  - name: step6
+    description: This view includes the previous route data but with the full airport and city names in English.
+  - name: bookings_leadtime
+    description: This view includes the time between when a ticket is purchased and the first flight.
+  - name: delays
+    description: This view shows the difference between scheduled and actual duration, for flights with actual data.
+  - name: new_bookings 
+    description: This incremental view captures new bookings.
